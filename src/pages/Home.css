@@ -1,0 +1,22 @@
+.Home .header {
+  padding: 80px;
+}
+
+.Home .content {
+  display: flex;
+  flex-direction: column;
+}
+
+.Home .prop-button-group {
+  display: flex;
+  justify-content: center;
+}
+
+.Home .prop-button {
+  box-sizing: border-box;
+  width: 200px;
+  height: 200px;
+  border: 1px solid rgba(169, 167, 170, 0.5);
+  margin: 15px 30px;
+  border-radius: 100px;
+}

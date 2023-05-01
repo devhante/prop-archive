@@ -1,13 +1,19 @@
 import './App.css';
 import React, { useState } from 'react';
 import Header from './components/Header';
+import { Route, Routes } from 'react-router-dom';
+import Home from './pages/Home';
+import Content from './pages/Content';
 
 function App() {
   const [page, setPage] = useState(0);
 
   return (
     <div className="App background">
-      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/:week" element={<Content />} />
+      </Routes>
     </div>
   );
 }
