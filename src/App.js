@@ -1,9 +1,9 @@
-import './App.css';
-import React, { useState } from 'react';
-import Header from './components/Header';
-import { Route, Routes } from 'react-router-dom';
-import Home from './pages/Home';
-import Content from './pages/Content';
+import "./App.css";
+import React, { useState } from "react";
+import Header from "./components/Header";
+import { Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
+import Content from "./pages/Content";
 
 function App() {
   const [page, setPage] = useState(0);
@@ -12,7 +12,7 @@ function App() {
     <div className="App background">
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/:week" element={<Content />} />
+        <Route path="/:code" element={<Content />} />
       </Routes>
     </div>
   );
