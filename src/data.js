@@ -1,4 +1,5 @@
 import image11 from "./images/11.jpg";
+import image12 from "./images/12.jpg";
 import image21 from "./images/21.jpg";
 import image31 from "./images/31.jpg";
 import image41 from "./images/41.png";
@@ -47,7 +48,7 @@ function getPropImage(week, isPrime) {
   let result = "";
   switch (week) {
     case "1":
-      result = isPrime ? image11 : image11;
+      result = isPrime ? image11 : image12;
       break;
     case "2":
       result = isPrime ? image21 : image21;
@@ -95,6 +96,7 @@ function getContents(week, isPrime) {
       "반짝거린다.",
       "가위로 잘 잘린다.",
       "빛에 비추면 빛이 약간 투과한다(반투명하다).",
+      "색을 입히기 쉽다.",
     ],
     [
       "여러 번 접으면 쉽게 잘리거나 찢어지지 않는다.",
@@ -105,17 +107,41 @@ function getContents(week, isPrime) {
     ],
   ];
   const content12 = [
-    ["딱딱하다.", "차갑다.", "무겁다.", "모양이 다양하다."],
+    [
+      "딱딱하다.",
+      "차갑다.",
+      "무겁다.",
+      "모양이 다양하다.",
+      "변형시키기 힘들다.",
+    ],
     [
       "반짝거린다.",
       "색깔이 다양하다.",
       "맞으면 아프다.",
       "가위로 잘 잘리지 않는다.",
     ],
-    ["흙냄새가 난다.", "종이를 긁어도 변함이 없다."],
+    ["흙냄새가 난다.", "종이를 긁어도 변함이 없다.", "색을 입히기 힘들다."],
   ];
 
-  const content21 = [[], [], []];
+  const content21 = [
+    [
+      "길이가 길다.",
+      "겉은 나무로, 심은 흑연으로 이루어져 있다.",
+      "대부분 육각기둥 모양이다.",
+      "심의 굵기가 다양하다.",
+    ],
+    [
+      "칼로 잘 깎인다.",
+      "흑연 부분을 칼로 깎으면 가루로 묻어나온다.",
+      "나무 부분보다 흑연 부분이 더 잘 부서진다.",
+      "날카롭게 깎으면 무기로 쓸 수 있을 정도로 위험하다.",
+    ],
+    [
+      "가로로 부러뜨렸을 때 단면이 깔끔하지 않다.",
+      "세로로 부러뜨리면 단면이 깔끔하다.",
+      "물풀로 붙였을 때 잘 붙는다.",
+    ],
+  ];
   const content22 = [[], [], []];
 
   const content31 = [[], [], []];
