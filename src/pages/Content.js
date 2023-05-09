@@ -10,6 +10,7 @@ function Content() {
   const page = code[1];
 
   const contents = getContents(week, page === "1");
+  console.log(contents);
   const propImage = getPropImage(week, page === "1");
 
   return (
