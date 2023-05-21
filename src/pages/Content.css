@@ -88,3 +88,42 @@
   font-family: 'ChosunSm';
   color: #7A6E77;
 }
+
+.Content .content > .card {
+  display: grid;
+  grid-template-columns: 400px  32px 1fr;
+  flex-grow: 1;
+  padding: 32px;
+  background: rgba(229, 232, 231, 0.2);
+  border: 1px solid #A9A7AA;
+  box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  text-align: left;
+  font-size: 16px;
+  line-height: 32px;
+  font-family: 'ChosunSm';
+  color: #7A6E77;
+}
+
+.Content .content > .card > .cardimage {
+  width: 400px;
+  margin-right: 32px;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.Content .content > .card > .cardtext {
+  white-space: pre-wrap;
+}
+
+.imageslider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+}
